@@ -73,7 +73,20 @@ export const styles = StyleSheet.create({
     width: '60%',
   },
   icon: {
-    width: 40,
-    height: 40,
+    width: 50,
+    height: 50,
+    borderRadius: 25,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginHorizontal: 10, // Espaçamento entre ícones
+  },
+  facebookIcon: {
+    backgroundColor: '#4267B2', // Cor de fundo do Facebook
+  },
+  googleIcon: {
+    backgroundColor: '#DB4437', // Cor de fundo do Google
+  },
+  linkedinIcon: {
+    backgroundColor: '#0077B5', // Cor de fundo do LinkedIn
   },
 });

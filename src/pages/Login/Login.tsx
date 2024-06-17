@@ -1,6 +1,8 @@
 import { TextInput, View, Image, Text, TouchableOpacity } from "react-native"
 import { styles } from "./styles"
 import { Button } from "@/src/components/Button/Button";
+import StarIcon from "@/src/assets/StarIcon/StarIcon";
+import CircleIcon from "@/src/assets/Circle/CircleIcon";
 
 export const Login = ({ navigation }: { navigation: any }) => {
   return (
@@ -11,6 +13,10 @@ export const Login = ({ navigation }: { navigation: any }) => {
           source={{ uri: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpdSWt59bPEzpuYnB_UVmpB-nbwKySeBhW1515MPoJOfXJ5CPs' }}
           style={ styles.image }
         />
+        <StarIcon style={{ top: 5, left: 20 }} />
+        <StarIcon style={{ top: 10, right: -20 }} />
+        <CircleIcon style={{ bottom: -20, right: 20 }} />
+
       </View>
       <Text style={ styles.title }>Login</Text>
 

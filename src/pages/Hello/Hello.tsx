@@ -2,6 +2,9 @@ import { Image, View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import {styles}  from "./styles";
 import { Button } from "@/src/components/Button/Button";
+import { FontAwesome } from '@expo/vector-icons';
+import StarIcon  from "@/src/assets/StarIcon/StarIcon";
+import CircleIcon  from "@/src/assets/Circle/CircleIcon";
 
 export const Hello = ({ navigation }: { navigation: any }) => {
   return (
@@ -13,6 +16,11 @@ export const Hello = ({ navigation }: { navigation: any }) => {
           source={{ uri: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIgAeuQ9quH8MdUitP6Xd5_bxFesYfFLbLmmBbUY_7FS3UPZ0n' }}
           style={styles.image}
         />
+
+        <StarIcon style={{ top: -15, left: -20 }} />
+        <StarIcon style={{ top: 10, right: -20 }} />
+        <StarIcon style={{ bottom: -20, right: 20 }} />
+        <CircleIcon style={{ bottom: 60, left: -60 }} />
         
       </View>
 
@@ -39,9 +47,15 @@ export const Hello = ({ navigation }: { navigation: any }) => {
         <Text style={styles.socialText}>Sign up using</Text>
 
         <View style={styles.socialIcons}>
-          <Image source={{ uri: 'https://img.icons8.com/fluency/48/000000/facebook-new.png' }} style={styles.icon} />
-          <Image source={{ uri: 'https://img.icons8.com/fluency/48/000000/google-logo.png' }} style={styles.icon} />
-          <Image source={{ uri: 'https://img.icons8.com/fluency/48/000000/linkedin.png' }} style={styles.icon} />
+        <View style={[styles.icon, styles.facebookIcon]}>
+            <FontAwesome name="facebook" size={24} color="#ffffff" />
+          </View>
+          <View style={[styles.icon, styles.googleIcon]}>
+            <FontAwesome name="google" size={24} color="#ffffff" />
+          </View>
+          <View style={[styles.icon, styles.linkedinIcon]}>
+            <FontAwesome name="linkedin" size={24} color="#ffffff" />
+          </View>
         </View>
     
       </View>
