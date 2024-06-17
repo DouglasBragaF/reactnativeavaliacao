@@ -6,5 +6,5 @@ export default function Index() {
   return (
     // <Hello navigation={undefined} />
     <Login navigation={undefined} />
-  );
-}
+  )
+};

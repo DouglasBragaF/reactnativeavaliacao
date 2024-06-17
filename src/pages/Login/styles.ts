@@ -55,19 +55,23 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     textAlign: 'left',
     marginTop: 5,
-    marginBottom: 20,
+    marginBottom: 10,
+  },
+  buttonContainer: {
+    alignItems: 'flex-end', // Centraliza o botão horizontalmente
+    marginTop: 10,
   },
   button: {
     backgroundColor: '#6200ee',
-    padding: 15,
+    padding: 10,
     borderRadius: 25,
-    width: '80%',
+    width: '40%',
     alignItems: 'center',
-    marginVertical: 10,
+    marginVertical: 0,
   },
   buttonText: {
     color: '#ffffff',
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: 'bold',
   },
   

@@ -35,14 +35,16 @@ export const Login = ({ navigation }: { navigation: any }) => {
           <Text style={styles.forgotPasswordText}>Forgot password?</Text>
         </TouchableOpacity>
 
+        <View style={styles.buttonContainer}>
+          <Button
+            title="Sign up"
+            onPress={() => navigation.navigate('Signup')}
+            style={styles.button}
+            textStyle={styles.buttonText}
+          />
+        </View>
+
       </View>
-      
-      <Button
-        title="Sign up"
-        onPress={() => navigation.navigate('Signup')}
-        style={styles.button}
-        textStyle={styles.buttonText}
-      />
       
     </View>
   );
