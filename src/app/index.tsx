@@ -4,7 +4,7 @@ import { Login } from "../pages/Login/Login";
 
 export default function Index() {
   return (
-    <Hello navigation={undefined} />
-    // <Login navigation={undefined} /> 
+    // <Hello navigation={undefined} />
+    <Login navigation={undefined} /> 
   )
 };
